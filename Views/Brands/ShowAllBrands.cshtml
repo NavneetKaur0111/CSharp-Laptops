@@ -1,0 +1,14 @@
+﻿@model List<string>
+@{
+    ViewData["Title"] = "All brands";
+}
+<h1 class="Page-heading"> Name of all the laptop brands are:</h1>
+<ul class="brand-ul items">
+    @foreach (var laptop in Model)
+    {
+        <li>
+            @laptop
+        </li>
+    }
+
+</ul>

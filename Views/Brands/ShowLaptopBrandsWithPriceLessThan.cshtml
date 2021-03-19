@@ -1,0 +1,13 @@
+﻿@model List<Brand>
+@{
+    ViewData["Title"] = "laptops with price less than requested";
+}
+<h1 class="Page-heading">Laptops with price less then @ViewBag.money</h1>
+<ul class="brand-ul items">
+    @foreach (var brand in Model)
+    {
+        <li>
+            @brand
+        </li>
+    }
+</ul>

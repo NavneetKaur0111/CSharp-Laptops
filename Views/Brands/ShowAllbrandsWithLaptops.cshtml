@@ -1,0 +1,25 @@
+﻿@model List<Brand>
+@{
+    ViewData["Title"] = "All brands with their laptops";
+}
+<h1 class="Page-heading">Brands with their laptops</h1>
+<ul class="brand-ul items">
+    @foreach (var brand in Model)
+    {
+        <li>
+            <h3>@brand</h3>
+            <ul class="list-ul buttons-container">
+                @foreach (var laptop in brand.Laptops)
+                {
+                    <li>
+                        <div class="page-laptop-box">
+                            <h4> @laptop.Name @laptop.Processor</h4>
+                            <p>Color: @laptop.Color</p>
+                            <p>Price: $@laptop.Price</p>
+                        </div>
+                    </li>
+                }
+            </ul>
+        </li>
+    }
+</ul>

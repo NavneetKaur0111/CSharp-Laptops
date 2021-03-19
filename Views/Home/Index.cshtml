@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div>
+    <div class="text-center">
+        <h1 class="homepage-welcome"> Welcome to the collection of latest Laptops </h1>
+    </div>
+    <div class="Instructions-Container">
+        <h5>Click the following the buttons to do the following functions</h5>
+        <div class="buttons-container">
+            <a asp-area="" asp-controller="Laptops" asp-action="MostExpensiveLaptop">
+                Most Expensive laptop
+            </a>
+            <a asp-area="" asp-controller="Laptops" asp-action="TwoMostExpensiveLaptops">
+                Two Most Expensive laptops
+            </a>
+            <a asp-area="" asp-controller="Laptops" asp-action="ThreeMostAffordableLaptops">
+                Three Most Affordable laptops
+            </a>
+            <a asp-area="" asp-controller="Brands" asp-action="BrandWithMostExpensiveLaptop">
+                Brand With Most Expensive laptop
+            </a>
+            <a asp-area="" asp-controller="Brands" asp-action="ShowAllBrands">
+                All laptop brands
+            </a>
+            <a asp-area="" asp-controller="Brands" asp-action="ShowAllBrandsWithLaptops">
+                All laptop brands with laptops
+            </a>
+        </div>
+    </div>
+</div>

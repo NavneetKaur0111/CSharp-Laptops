@@ -1,0 +1,17 @@
+﻿@model List<Laptop>
+@{
+    ViewData["Title"] = "Two Most Expensive Laptops";
+}
+<h1 class="Page-heading"> Two most expensive laptops are: </h1>
+<ul class="list-ul buttons-container">
+    @foreach (var laptop in Model)
+    {
+        <li>
+            <div class="page-laptop-box">
+                <h4>@laptop.Brand.Name @laptop.Name @laptop.Processor</h4>
+                <p>Color: @laptop.Color</p>
+                <p>Price: $@laptop.Price</p>
+            </div>
+        </li>
+    }
+</ul>

@@ -1,0 +1,12 @@
+﻿@model Laptop;
+@{
+    ViewData["Title"] = "Most Expensive Laptop";
+}
+<h1 class="Page-heading">Most Expensive Laptop is </h1>
+<div class="set-size buttons-container">
+    <div class="page-laptop-box">
+        <p>@Model.Brand.Name @Model.Name @Model.Processor</p>
+        <p>Color: @Model.Color</p>
+        <p>Price: $@Model.Price</p>
+    </div>
+</div>

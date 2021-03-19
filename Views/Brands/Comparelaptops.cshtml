@@ -1,0 +1,17 @@
+﻿@model List<Laptop>
+@{ 
+    ViewData["Title"] = "Compare Laptops";
+}
+<h1 class="Page-heading">Comparing @Model[0].Name And @Model[1].Name</h1>
+<div class="list-ul buttons-container">
+    @foreach (var laptop in Model)
+    {
+        <div class="compare-laptop-box">
+            <h3>@laptop.Brand.Name @laptop.Name</h3>
+            <p>Processor: @laptop.Processor </p>
+            <p>Color: @laptop.Color</p>
+            <p>Price: $@laptop.Price</p>
+        </div>
+    }
+
+</div>
